@@ -3,18 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Noomi Wikström</title>
-    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
-    <link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.1/concrete.css" />
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.1/concrete.css"/>
 </head>
 
-<body>
-    <main>
-        <header>
-            <h1>Hej!</h1>
-        </header>
-    </main>
+<body style="background-color: black;">
+<div class="fireworks-container"
+     style="background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+<script>
+    const container = document.querySelector('.fireworks-container')
+    const fireworks = new Fireworks.default(container)
+    fireworks.start()
+</script>
 </body>
 
 </html>
